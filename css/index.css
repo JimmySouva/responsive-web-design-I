@@ -1,180 +1,259 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-.container {
-	display: flex;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-.card-container {
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-content:	space-around; 
-	height: 750px;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-.card-container2 {
-	height: 300px;
-	justify-content: space-between;
-	flex-flow: row wrap;
-}
-
-.card {
-	border: 1px solid black;
-	background: #EFEFEF;
-	width: 45%;
-	height: 20%;
-}
-
-.card7 {
-	flex-flow: column wrap;
-	justify-content: space-between;
-	width: 45%;
-}
-
-.card8 {
-
-}
-
-.hsb1 {
-	flex-flow: column wrap;
-	align-items: center;
-}
-
-.body2{
-	width: 880px;
-	margin: auto;
-}
-
 body {
-	width: 900px;
-	margin: auto;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.h1-home {
-	font-size: 80px;
-	width: 280px;
-	height: 250px;
-	text-align: center;
-	vertical-align: top;
-	padding: 0px 0px 0px 0px;
-	margin: 0px 0px 0px 100px;
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
 }
 
-.h1-services {
-	font-size: 30px;
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+  margin: 100px;
+  margin-top: 25px;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px gray;
 }
 
 nav {
-
-}
-
-.hr-services {
-	margin: 30px 0px 30px 0px;
-}
-
-.hr-home {
-	margin: 60px 0px 60px 0px;
-}
-
-.services-header-img {
-	margin: 30px 0px 20px 0px;
-}
-
-.navbar {
-	align-items: flex-end;
+  width: 800px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .logo {
-
-	margin-left: 15%;
+  display: flex;
+  align-self: flex-start;
 }
 
-.roundpic {
-	width: 40%;
+h1 {
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 2px 2px 5px gray;
+  display: flex;
 }
 
-.pic1 {
-	margin-top: 40px;
-	margin-bottom: 40px;
+.code-img {
+  margin-bottom: 50px;
+}
+
+.jumbo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.jumbo-copy {
+  text-align: center;
+  margin-top: 60px;
+}
+
+body{
+  max-width: 800px;
+  margin: auto;
+}
+
+button{
+  border: solid black;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: #4CAF50; 
+  color: white;
+}
+
+.top-p {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .middle-img {
-	margin: auto;
-} 
-
-a {
-	margin: 0px 20px 0px 20px;
-	color: grey;
+  width: 100%;
 }
 
-.header-services{
-
+.bottom-p {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.header-home {
-	height: 400px;
-	margin-top: 60px;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-
+.contact {
+  width: 20%
 }
 
-ul {
-	list-style-type: square;
-	justify-items: 
+contact > p {
+  line-height: 2.0;
 }
 
-footer {
-	text-align: center;
-	margin-top: 80px;
-	justify-content: center;
+.copyr{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
-.p1 {
-	width: 48%;
+h5 {
+    text-shadow: 2px 2px 5px gray;
 }
 
-.p2 {
-	width: 48%;
-	margin-left: 20px;
+/* Media Queries */
+/* .mobileLogo{
+    max-width: 100%;
+    display: none;
+} */
+
+@media(max-width: 800px){
+    .logo{
+        display: none;
+    }
+
+    .code-img{
+        display: none;
+    }
 }
 
-.p3 {
-	width: 30%;
-}
+@media(max-width: 500px){
+    .logo{
+        display: none;
+    }
 
-.p4 {
-	width: 30%;
-	margin-left: 30px;
-	margin-right: 30px;
-}
+    .mobileLogo{
+        max-width: 200px;
+        display: flex;
+        margin-bottom: 20px;
+        width: 80%;
+        margin-left: 20px;
+    }
 
-.p5 {
-	width: 30%;
-}
+    nav{
+        flex-direction: column;
+        align-items: center;
+        width: 98%;
+        min-width: 200px;
+        margin-top: 140px;
+        margin-bottom: 100px;
+    }
 
-.button2 {
-	border: 1px solid black;
-	border-radius: 5px;
-	padding: 0px 10px 0px 10px;
-	font-size: 15px;
-    margin-right: 100px;
-}
+    a{
+        display: block;
+        padding: 16px;
+        border-bottom: 2px solid gray;
+        width: 100%;
+        text-align: center;
+    }
 
-.button1 {
-	border: 1px solid black;
-	padding: 0px 10px 0px 10px;
-	font-size: 15px;
-    margin-left: 100px;
-    margin-top: 50px;
-}
-span {
-	display: inline-block;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
+    a:first-of-type{
+        border-top: 2px solid gray;
+    }
 
-.num1{
-	margin-top: 30px;
-}
-.num2 {
-	margin-bottom: 30px;
+    .jumbo-copy{
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .code-img{
+        display: none;
+    }
+
+    body{
+        max-width: 300px;
+    }
+
+    article{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .top-p{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .bottom-p{
+        flex-direction: column;
+    }
+
+    html{
+        margin: 10px;
+    }
+
+    .contact > p{
+        line-height: 1.5;
+    }
+
+    .contact{
+        width: 40%;
+    }
+
+    .copyr{
+        margin-bottom: 30px;
+    }
 } 
